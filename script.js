@@ -1,12 +1,18 @@
 "use strict";
 
-console.log(document.querySelector(".message").textContent);
+// Practice code
 
-document.querySelector(".message").textContent = 
-"🎉 Correct!"
+// console.log(document.querySelector(".message").textContent);
 
-document.querySelector(".number").textContent = 13
-document.querySelector(".score").textContent = 20
+// document.querySelector(".message").textContent =
+// "🎉 Correct!"
 
-document.querySelector(".guess").value = 21
-console.log(document.querySelector(".guess").value = 21);
+// document.querySelector(".number").textContent = 13
+// document.querySelector(".score").textContent = 20
+
+// document.querySelector(".guess").value = 21
+// console.log(document.querySelector(".guess").value = 21);
+
+document.querySelector(".check").addEventListener("click", function() {
+  console.log(document.querySelector(".guess").value);
+})
