@@ -33,13 +33,21 @@ document.querySelector(".check").addEventListener("click", function () {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      document.querySelector(".message").textContent = "You ran out of guesses, Game Over!💥";
-      score = 0
+      document.querySelector(".message").textContent =
+        "You ran out of guesses, Game Over!💥";
+      score = 0;
       document.querySelector(".score").textContent = score;
     }
   } else if (guess < secretNumber) {
-    document.querySelector(".message").textContent = "Too Low! 📉";
-    score--;
-    document.querySelector(".score").textContent = score;
+    if (score > 1) {
+      document.querySelector(".message").textContent = "Too Low! 📉";
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent =
+        "You ran out of guesses, Game Over!💥";
+      score = 0;
+      document.querySelector(".score").textContent = score;
+    }
   }
 });
