@@ -1,20 +1,7 @@
 "use strict";
 
-// Practice code
-
-// console.log(document.querySelector(".message").textContent);
-
-// document.querySelector(".message").textContent =
-// "🎉 Correct!"
-
-// document.querySelector(".number").textContent = 13
-// document.querySelector(".score").textContent = 20
-
-// document.querySelector(".guess").value = 21
-// console.log(document.querySelector(".guess").value = 21);
-
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(".number").textContent = secretNumber;
+document.querySelector(".number").textContent = "?";
 let score = 20;
 let highScore = 0;
 
